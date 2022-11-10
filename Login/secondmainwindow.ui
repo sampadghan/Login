@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondMainWindow</class>
+ <widget class="QMainWindow" name="SecondMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Pending Task</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListWidget" name="listWidgetPending"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Completed Task</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listWidgetCompleted"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>LogOut</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAction">
+    <property name="title">
+     <string>Action</string>
+    </property>
+    <addaction name="actionAdd_Task"/>
+    <addaction name="actionEdit_Task"/>
+    <addaction name="actionCompleted_Task"/>
+    <addaction name="actionDelete_Pending_Task"/>
+    <addaction name="actionDeleted_Completed_Task"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Task">
+   <property name="text">
+    <string>Add Task</string>
+   </property>
+  </action>
+  <action name="actionEdit_Task">
+   <property name="text">
+    <string>Edit Task</string>
+   </property>
+  </action>
+  <action name="actionCompleted_Task">
+   <property name="text">
+    <string>Completed Task</string>
+   </property>
+  </action>
+  <action name="actionDelete_Pending_Task">
+   <property name="text">
+    <string>Delete Pending Task</string>
+   </property>
+  </action>
+  <action name="actionDeleted_Completed_Task">
+   <property name="text">
+    <string>Deleted Completed Task</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
